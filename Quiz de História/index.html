@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
+     <link rel="stylesheet" href="./assets/css/main.css">
+     <!-- link remixicon -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+     rel="stylesheet"/>
+     <!-- animate css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Quiz de História</title>
+</head>
+<body>
+    <main class="quiz__container" id="quiz-container">
+        <header class="quiz__header" id="quiz-header">
+            <di class="quiz_header_logo">
+                <a href="#">AngoQuizz <i class="ri-questionnaire-line"></i></a>
+            </di>
+
+            <div class="quiz_header_step">
+                <input type="range" id="quiz-step" value="1" >
+            </div>
+
+            <ul class="quiz_header_list" >
+                <li class="quiz_header_item" >
+                    <div class="quiz_header_score">
+                        <div class="box-icon" >
+                            <i class="ri-medal-line"></i>
+                        </div>
+                        <span id="quiz-score">0</span>
+                    </div>
+                </li>
+                <li class="quiz_header_item" >
+                    <div class="quiz_header_timer">
+                        <div class="box-icon" >
+                            <i class="ri-timer-line"></i>
+                        </div>
+                        <span id="quiz-timer">00:00</span>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <div class="quiz__body" id="quiz-body">
+            <div class="container">
+                <div class="quiz__question" id="quiz-question">
+                    <div class="quiz__question-title" id="quiz-question-title">
+                        <div>
+                            <h4>Questão 1</h4>
+                        </div>
+                        <br>
+                        <p>Quem foi o primeiro presidente do Brasil?</p>
+                    </div>
+                    <div class="quiz__question-options" id="quiz-question-options">
+                        <div class="quiz__question-option" id="quiz-question-option">
+                            <label for="quiz-option">A) Getúlio Vargas</label>
+                            <input type="radio" name="quiz-option" id="quiz-option">
+                        </div>
+                        <div class="quiz__question-option" id="quiz-question-option">
+                            <label for="quiz-option">B) Jânio Quadros</label>
+                            <input type="radio" name="quiz-option" id="quiz-option">
+                        </div>
+                        <div class="quiz__question-option" id="quiz-question-option">
+                            <label for="quiz-option">C) Deodoro da Fonseca</label>
+                            <input type="radio" name="quiz-option" id="quiz-option">
+                        </div>
+                        <div class="quiz__question-option" id="quiz-question-option">
+                            <label for="quiz-option">D) Tancredo Neves</label>
+                            <input type="radio" name="quiz-option" id="quiz-option">
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz__actions" id="quiz-actions">
+                    <button class="quiz__action" id="quiz-action">Próxima</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- script js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
